@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Photo Gallery</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=yes"/>
+        <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+        <style>
+            h1 {
+                font-family: "Arial", serif;
+                text-align: center;
+                font-size: 64px;
+            }
+
+            #gallery {
+                /* This property creates the CSS Grid container */
+                display: -ms-grid;
+                display: grid;
+
+                width: 100%;
+                height: 100%;
+
+                /* Defining the number of rows and the height of the rows */
+               
+                -ms-grid-row: repeat(auto-fit, minmax(270px, 1fr));
+                grid-row: repeat(auto-fit, minmax(270px, 1fr));
+                grid-template-rows: repeat(auto-fit, minmax(270px, 1fr));
+
+                /* Defining the number of columns and the width of the columns */
+               
+                -ms-grid-column: repeat(auto-fit, minmax(480px, 1fr));
+                grid-column: repeat(auto-fit, minmax(480px, 1fr));
+                grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+
+                /* This adds 10 px of space between our elements in our grid */
+                -ms-grid-gap: 10px;
+                grid-gap: 10px;
+                gap: 10px;
+            }
+
+            #gallery a, #gallery img {
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <a href="index.html"><li>Home</li></a>
+                <a href="Order.html"><li>Menu</li></a>
+                <a href="More.html"><li>About Us</li></a>
+                <a href="Contact.html">Contact.html</a>
+            </ul>
+        </nav>
+        <h1></h1>
+        <div id="gallery">
+            <a href="https://static.wixstatic.com/media/9b7b0c_da331ffee9d146bf9eaf3ebeb4a72cee~mv2.jpg/v1/fill/w_280,h_280,q_90/9b7b0c_da331ffee9d146bf9eaf3ebeb4a72cee~mv2.jpg">
+                <img src="https://static.wixstatic.com/media/9b7b0c_da331ffee9d146bf9eaf3ebeb4a72cee~mv2.jpg/v1/fill/w_280,h_280,q_90/9b7b0c_da331ffee9d146bf9eaf3ebeb4a72cee~mv2.jpg"/>
+            </a>
+            <a href="https://static.wixstatic.com/media/9b7b0c_838461fbd1474256985cc147daa112f6~mv2.jpg/v1/fill/w_280,h_350,q_90/9b7b0c_838461fbd1474256985cc147daa112f6~mv2.jpg">
+                <img src="https://static.wixstatic.com/media/9b7b0c_838461fbd1474256985cc147daa112f6~mv2.jpg/v1/fill/w_280,h_350,q_90/9b7b0c_838461fbd1474256985cc147daa112f6~mv2.jpg"/>
+            </a>
+            <a href="https://potahto.ca/wp-content/uploads/2019/11/St.-James-Burger-and-Chip-Co.-1.jpg">
+                <img src="https://potahto.ca/wp-content/uploads/2019/11/St.-James-Burger-and-Chip-Co.-1.jpg"/>
+            </a>
+            <a href="https://i1.wp.com/friedchickenfest.ca/wp-content/uploads/2019/01/img_8863.jpg?resize=2000%2C1200&ssl=1">
+                <img src="https://i1.wp.com/friedchickenfest.ca/wp-content/uploads/2019/01/img_8863.jpg?resize=2000%2C1200&ssl=1"/>
+            </a>
+            <a href="https://static.wixstatic.com/media/9b7b0c_a039320ac73c4c7f80ace544287786c3~mv2.jpg/v1/fill/w_320,h_320,fp_0.50_0.50,q_90/9b7b0c_a039320ac73c4c7f80ace544287786c3~mv2.jpg">
+                <img src="https://static.wixstatic.com/media/9b7b0c_a039320ac73c4c7f80ace544287786c3~mv2.jpg/v1/fill/w_320,h_320,fp_0.50_0.50,q_90/9b7b0c_a039320ac73c4c7f80ace544287786c3~mv2.jpg"/>
+            </a>
+            <a href="https://twisper.com/wp-content/uploads/2020/03/close-up-photo-of-burger-3915906-scaled.jpg">
+                <img src="https://twisper.com/wp-content/uploads/2020/03/close-up-photo-of-burger-3915906-scaled.jpg"/>
+            </a>
+            <a href="https://twisper.com/wp-content/uploads/2020/03/close-up-photo-of-burger-3915906-scaled.jpg">
+                <img src="https://twisper.com/wp-content/uploads/2020/03/close-up-photo-of-burger-3915906-scaled.jpg"/>
+            </a>
+            <a href="https://twisper.com/wp-content/uploads/2020/03/close-up-photo-of-burger-3915906-scaled.jpg">
+                <img src="https://twisper.com/wp-content/uploads/2020/03/close-up-photo-of-burger-3915906-scaled.jpg"/>
+            </a>
+            <a href="https://twisper.com/wp-content/uploads/2020/03/close-up-photo-of-burger-3915906-scaled.jpg">
+                <img src="https://twisper.com/wp-content/uploads/2020/03/close-up-photo-of-burger-3915906-scaled.jpg"/>
+            </a>
+            <a href="https://twisper.com/wp-content/uploads/2020/03/close-up-photo-of-burger-3915906-scaled.jpg">
+                <img src="https://twisper.com/wp-content/uploads/2020/03/close-up-photo-of-burger-3915906-scaled.jpg"/>
+            </a>
+            <a href="https://twisper.com/wp-content/uploads/2020/03/close-up-photo-of-burger-3915906-scaled.jpg">
+                <img src="https://twisper.com/wp-content/uploads/2020/03/close-up-photo-of-burger-3915906-scaled.jpg"/>
+            </a>
+            <a href="https://twisper.com/wp-content/uploads/2020/03/close-up-photo-of-burger-3915906-scaled.jpg">
+                <img src="https://twisper.com/wp-content/uploads/2020/03/close-up-photo-of-burger-3915906-scaled.jpg"/>
+            </a>
+
+            
+        </div>
+    </body>
+</html>
