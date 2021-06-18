@@ -1,13 +1,28 @@
+<!-- 
+    Name: Vansh Saini
+    Course: EC-Software Developement 20S
+    Teacher: Scott Hardman
+    School: Pembina Trails Early College (PTEC)
+    Date Late Modified: June 14 2021 -TUESDAY 
+    
+    A Lot of this content was taken from the following sources:
+    Mr. Hardman respositories
+    w3schools
+    Javascript code which is sited above the code
+ -->
+
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Photo Gallery</title>
+        <title>Home</title>
         <meta charset="utf-8"/>
         <meta name="viewport" content="initial-scale=1.0, user-scalable=yes"/>
-        <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
-        <style>
+        <link rel="stylesheet" type="text/css" href="stylesheets/NewStyle.css">
+        <style> 
+            
+            
             h1 {
-                font-family: "Arial", serif;
+                font-family: Arial, Helvetica, sans-serif;
                 text-align: center;
                 font-size: 64px;
             }
@@ -20,17 +35,14 @@
                 width: 100%;
                 height: 100%;
 
-                /* Defining the number of rows and the height of the rows */
-               
-                -ms-grid-row: repeat(auto-fit, minmax(270px, 1fr));
-                grid-row: repeat(auto-fit, minmax(270px, 1fr));
-                grid-template-rows: repeat(auto-fit, minmax(270px, 1fr));
+                -ms-grid-row: repeat(auto-fit, 1fr);
+                grid-row: repeat(auto-fit, 1fr);
+                grid-template-rows: repeat(auto-fit, 1fr);
 
-                /* Defining the number of columns and the width of the columns */
-               
-                -ms-grid-column: repeat(auto-fit, minmax(480px, 1fr));
-                grid-column: repeat(auto-fit, minmax(480px, 1fr));
-                grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+                -ms-grid-column: repeat(auto-fit, 1fr);
+                grid-column: repeat(auto-fit, 1fr);
+                grid-template-columns: repeat(auto-fit, 1fr);
+
 
                 /* This adds 10 px of space between our elements in our grid */
                 -ms-grid-gap: 10px;
@@ -42,57 +54,92 @@
                 width: 100%;
                 height: 100%;
             }
+
+            #pic1 {
+                /* grid-area: pic1; */
+                grid-area: 1 / 1 / span 1 / span 1;
+            }
+
+            #pic2 {
+                /* grid-area: pic2; */
+                grid-area: 2 / 4 / span 1 / span 1;
+            }
+
+            #pic3 {
+                /* grid-area: pic3; */
+                grid-area: 1 / 2 / span 1 / span 1;
+            }
+            #pic4 {
+                /* grid-area: pic4; */
+                grid-area: 1 / 3 / span 1 / span 1;
+            }
+            #pic5 {
+                /* grid-area: pic5; */
+                grid-area: 1 / 4 / span 1 / span 1;
+            }
+            #pic6 {
+                /* grid-area: pic6; */
+                grid-area: 2 / 1 / span 1 / span 1;
+            }
+            #pic7 {
+                /* grid-area: pic7; */
+                grid-area: 2 / 2 / span 1 / span 1;
+            }
+
+            #pic8 {
+                /* grid-area: pic8; */
+                grid-area: 2 / 3 / span 1 / span 1;
+            }
+            
+            /* centers the image of the logo to the center*/
+            img {
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+            }
         </style>
     </head>
+    
+     <!--Puts the image at the top of the site -->
+    <header>
+        <img class="logo" src="images/logo.JPG" alt="logo" width="450" height="170">
+    </header>
+
     <body>
         <nav>
             <ul>
                 <a href="index.html"><li>Home</li></a>
-                <a href="Order.html"><li>Menu</li></a>
                 <a href="More.html"><li>About Us</li></a>
-                <a href="Contact.html">Contact.html</a>
+                <a href="Contact.html">Contact</a>
+                <a href="Order.html"><li>Order</li></a>
             </ul>
         </nav>
-        <h1></h1>
+        
         <div id="gallery">
-            <a href="https://static.wixstatic.com/media/9b7b0c_da331ffee9d146bf9eaf3ebeb4a72cee~mv2.jpg/v1/fill/w_280,h_280,q_90/9b7b0c_da331ffee9d146bf9eaf3ebeb4a72cee~mv2.jpg">
+            <a id="pic1" href="https://static.wixstatic.com/media/9b7b0c_da331ffee9d146bf9eaf3ebeb4a72cee~mv2.jpg/v1/fill/w_280,h_280,q_90/9b7b0c_da331ffee9d146bf9eaf3ebeb4a72cee~mv2.jpg">
                 <img src="https://static.wixstatic.com/media/9b7b0c_da331ffee9d146bf9eaf3ebeb4a72cee~mv2.jpg/v1/fill/w_280,h_280,q_90/9b7b0c_da331ffee9d146bf9eaf3ebeb4a72cee~mv2.jpg"/>
             </a>
-            <a href="https://static.wixstatic.com/media/9b7b0c_838461fbd1474256985cc147daa112f6~mv2.jpg/v1/fill/w_280,h_350,q_90/9b7b0c_838461fbd1474256985cc147daa112f6~mv2.jpg">
+            <a id="pic2" href="https://static.wixstatic.com/media/9b7b0c_838461fbd1474256985cc147daa112f6~mv2.jpg/v1/fill/w_280,h_350,q_90/9b7b0c_838461fbd1474256985cc147daa112f6~mv2.jpg">
                 <img src="https://static.wixstatic.com/media/9b7b0c_838461fbd1474256985cc147daa112f6~mv2.jpg/v1/fill/w_280,h_350,q_90/9b7b0c_838461fbd1474256985cc147daa112f6~mv2.jpg"/>
             </a>
-            <a href="https://potahto.ca/wp-content/uploads/2019/11/St.-James-Burger-and-Chip-Co.-1.jpg">
+            <a id="pic3" href="https://potahto.ca/wp-content/uploads/2019/11/St.-James-Burger-and-Chip-Co.-1.jpg">
                 <img src="https://potahto.ca/wp-content/uploads/2019/11/St.-James-Burger-and-Chip-Co.-1.jpg"/>
             </a>
-            <a href="https://i1.wp.com/friedchickenfest.ca/wp-content/uploads/2019/01/img_8863.jpg?resize=2000%2C1200&ssl=1">
+            <a id="pic4" href="https://i1.wp.com/friedchickenfest.ca/wp-content/uploads/2019/01/img_8863.jpg?resize=2000%2C1200&ssl=1">
                 <img src="https://i1.wp.com/friedchickenfest.ca/wp-content/uploads/2019/01/img_8863.jpg?resize=2000%2C1200&ssl=1"/>
             </a>
-            <a href="https://static.wixstatic.com/media/9b7b0c_a039320ac73c4c7f80ace544287786c3~mv2.jpg/v1/fill/w_320,h_320,fp_0.50_0.50,q_90/9b7b0c_a039320ac73c4c7f80ace544287786c3~mv2.jpg">
-                <img src="https://static.wixstatic.com/media/9b7b0c_a039320ac73c4c7f80ace544287786c3~mv2.jpg/v1/fill/w_320,h_320,fp_0.50_0.50,q_90/9b7b0c_a039320ac73c4c7f80ace544287786c3~mv2.jpg"/>
-            </a>
-            <a href="https://twisper.com/wp-content/uploads/2020/03/close-up-photo-of-burger-3915906-scaled.jpg">
+            <a id="pic5" href="https://twisper.com/wp-content/uploads/2020/03/close-up-photo-of-burger-3915906-scaled.jpg">
                 <img src="https://twisper.com/wp-content/uploads/2020/03/close-up-photo-of-burger-3915906-scaled.jpg"/>
             </a>
-            <a href="https://twisper.com/wp-content/uploads/2020/03/close-up-photo-of-burger-3915906-scaled.jpg">
-                <img src="https://twisper.com/wp-content/uploads/2020/03/close-up-photo-of-burger-3915906-scaled.jpg"/>
+            <a id="pic6" href="https://i8.amplience.net/i/traeger/BBQ_Smoked_Burgers_with_Homemade_Ketchup?w=1200&sm=aspect&aspect=2:1&scaleFit=poi&$poi2$">
+                <img src="https://i8.amplience.net/i/traeger/BBQ_Smoked_Burgers_with_Homemade_Ketchup?w=1200&sm=aspect&aspect=2:1&scaleFit=poi&$poi2$"/>
             </a>
-            <a href="https://twisper.com/wp-content/uploads/2020/03/close-up-photo-of-burger-3915906-scaled.jpg">
-                <img src="https://twisper.com/wp-content/uploads/2020/03/close-up-photo-of-burger-3915906-scaled.jpg"/>
+            <a id="pic7" href="https://happilyunprocessed.com/wp-content/uploads/2018/03/Juicest-Burger-Everfeature.jpg.jpg">
+                <img src="https://happilyunprocessed.com/wp-content/uploads/2018/03/Juicest-Burger-Everfeature.jpg.jpg"/>
             </a>
-            <a href="https://twisper.com/wp-content/uploads/2020/03/close-up-photo-of-burger-3915906-scaled.jpg">
-                <img src="https://twisper.com/wp-content/uploads/2020/03/close-up-photo-of-burger-3915906-scaled.jpg"/>
+            <a id="pic8" href="https://10619-2.s.cdn12.com/rests/original/504_501487509.jpg">
+                <img src="https://10619-2.s.cdn12.com/rests/original/504_501487509.jpg"/>
             </a>
-            <a href="https://twisper.com/wp-content/uploads/2020/03/close-up-photo-of-burger-3915906-scaled.jpg">
-                <img src="https://twisper.com/wp-content/uploads/2020/03/close-up-photo-of-burger-3915906-scaled.jpg"/>
-            </a>
-            <a href="https://twisper.com/wp-content/uploads/2020/03/close-up-photo-of-burger-3915906-scaled.jpg">
-                <img src="https://twisper.com/wp-content/uploads/2020/03/close-up-photo-of-burger-3915906-scaled.jpg"/>
-            </a>
-            <a href="https://twisper.com/wp-content/uploads/2020/03/close-up-photo-of-burger-3915906-scaled.jpg">
-                <img src="https://twisper.com/wp-content/uploads/2020/03/close-up-photo-of-burger-3915906-scaled.jpg"/>
-            </a>
-
-            
         </div>
     </body>
 </html>

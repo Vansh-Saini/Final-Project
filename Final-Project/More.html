@@ -1,124 +1,148 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Photo Gallery</title>
+        <title>About Us</title>
         <meta charset="utf-8"/>
         <meta name="viewport" content="initial-scale=1.0, user-scalable=yes"/>
-        <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+        <link rel="stylesheet" type="text/css" href="stylesheets/NewStyle.css">
         <style>
-            h1 {
-                font-family: "Baskerville", Garamond, serif;
-                text-align: center;
-                font-size: 64px;
-            }
 
-            #gallery {
-                /* This property creates the CSS Grid container */
-                display: -ms-grid;
-                display: grid;
+/* creats the flex container and the type*/
 
-                width: 100%;
-                height: 100%;
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+}
 
-                -ms-grid-row: repeat(auto-fit, 1fr);
-                grid-row: repeat(auto-fit, 1fr);
-                grid-template-rows: repeat(auto-fit, 1fr);
+/* choosing how the cointainer looks like */ 
+.flex-container > div {
+  background-color: #ffffff;
+  width: 600px;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 30px;
+  font-size: 30px;
+}
 
-                -ms-grid-column: repeat(auto-fit, 1fr);
-                grid-column: repeat(auto-fit, 1fr);
-                grid-template-columns: repeat(auto-fit, 1fr);
-
-                
-                /* grid-template-areas: 
-                    "lazy lazy lazy pic1 pic1"
-                    "lazy lazy lazy pic1 pic1"
-                    "lazy lazy lazy pic4 pic5"
-                    "pic6 pic2 pic2 pic7 pic7"
-                    "pic8 pic2 pic2 pic7 pic7"; */
-
-                /* This adds 10 px of space between our elements in our grid */
-                -ms-grid-gap: 10px;
-                grid-gap: 10px;
-                gap: 10px;
+/* centers the image of the logo to the center*/
+img {
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
             }
-
-            #gallery a, #gallery img {
-                width: 100%;
-                height: 100%;
-            }
-
-            #pic1 {
-                /* grid-area: pic1; */
-                grid-area: 1 / 4 / span 2 / span 2;
-            }
-
-            #pic2 {
-                /* grid-area: pic2; */
-                grid-area: 4 / 2 / span 2 / span 2;
-            }
-
-            #pic3 {
-                /* grid-area: lazy; */
-                grid-area: 1 / 1 / span 3 / span 3;
-            }
-            #pic4 {
-                /* grid-area: pic4; */
-                grid-area: 3 / 4 / span 1 / span 1;
-            }
-            #pic5 {
-                /* grid-area: pic5; */
-                grid-area: 3 / 5 / span 1 / span 1;
-            }
-            #pic6 {
-                /* grid-area: pic6; */
-                grid-area: 4 / 1 / span 1 / span 1;
-            }
-            #pic7 {
-                /* grid-area: pic7; */
-                grid-area: 4 / 4 / span 2 / span 2;
-            }
-
-            #pic8 {
-                /* grid-area: pic8; */
-                grid-area: 5 / 1 / span 1 / span 1;
-            }
-        </style>
-    </head>
+</style>
+   </head>
+     
+   <!--Puts the image at the top of the site -->
+   <header>
+    <img class="logo" src="images/logo.JPG" alt="logo" width="450" height="170">
+   </header>
+   
     <body>
-        <nav>
-            <ul>
-                <a href="index.html"><li>Home</li></a>
-                <a href="Order.html"><li>Menu</li></a>
-                <a href="More.html"><li>About Us</li></a>
-                <a href="Contact.html">Contact.html</a>
-            </ul>
-        </nav>
-        <h1>Photo Gallery</h1>
-        <div id="gallery">
-            <a id="pic1" href="https://i.pinimg.com/originals/c9/68/2c/c9682c1a719b9d9219febc9c31f1cb22.jpg">
-                <img src="https://i.pinimg.com/originals/c9/68/2c/c9682c1a719b9d9219febc9c31f1cb22.jpg"/>
-            </a>
-            <a id="pic2" href="https://i.pinimg.com/originals/9f/91/2e/9f912eff2f2557ed1687c6c2f369d8ee.jpg">
-                <img src="https://i.pinimg.com/originals/9f/91/2e/9f912eff2f2557ed1687c6c2f369d8ee.jpg"/>
-            </a>
-            <a id="pic3" href="https://www.sheknows.com/wp-content/uploads/2018/08/gecphr8jxdjzlbdq7xi7.jpeg?w=709">
-                <img src="https://www.sheknows.com/wp-content/uploads/2018/08/gecphr8jxdjzlbdq7xi7.jpeg?w=709"/>
-            </a>
-            <a id="pic4" href="https://i.pinimg.com/originals/7f/a2/1b/7fa21b7d9d4c39771f4998b395ead994.jpg">
-                <img src="https://i.pinimg.com/originals/7f/a2/1b/7fa21b7d9d4c39771f4998b395ead994.jpg"/>
-            </a>
-            <a id="pic5" href="https://www.winnipesaukee.com/forums/attachment.php?attachmentid=11069&stc=1&d=1443215381">
-                <img src="https://www.winnipesaukee.com/forums/attachment.php?attachmentid=11069&stc=1&d=1443215381"/>
-            </a>
-            <a id="pic6" href="https://comicbookandbeyond.com/wp-content/uploads/2019/09/Bedivere-best-quotes.jpg">
-                <img src="https://comicbookandbeyond.com/wp-content/uploads/2019/09/Bedivere-best-quotes.jpg"/>
-            </a>
-            <a id="pic7" href="https://cdn.pastemagazine.com/www/articles/2021/02/04/monty-python-quotes-inline-1.jpg">
-                <img src="https://cdn.pastemagazine.com/www/articles/2021/02/04/monty-python-quotes-inline-1.jpg"/>
-            </a>
-            <a id="pic8" href="https://i.pinimg.com/originals/0e/21/55/0e2155fca1309e8aff487b1cb6b9ecd9.jpg">
-                <img src="https://i.pinimg.com/originals/0e/21/55/0e2155fca1309e8aff487b1cb6b9ecd9.jpg"/>
-            </a>
-        </div>
+
+      <nav>
+        <ul>
+            <a href="index.html"><li>Home</li></a>
+            <a href="More.html"><li>About Us</li></a>
+            <a href="Contact.html">Contact</a>
+            <a href="Order.html"><li>Order</li></a>
+        </ul>
+      </nav>
+
+    <div class="flex-container">
+  
+    <div>
+      <a href="https://static.wixstatic.com/media/9b7b0c_5c086cc8bd5849539db48bf7dc78c5b1~mv2_d_6192_4128_s_4_2.jpg/v1/fill/w_644,h_419,al_c,q_80,usm_0.66_1.00_0.01/TamponDonationswithRavi_MikeSudoma-95_jp.webp">
+      <img src="https://static.wixstatic.com/media/9b7b0c_5c086cc8bd5849539db48bf7dc78c5b1~mv2_d_6192_4128_s_4_2.jpg/v1/fill/w_644,h_419,al_c,q_80,usm_0.66_1.00_0.01/TamponDonationswithRavi_MikeSudoma-95_jp.webp"/></a>
+    </div>
+  
+    <div>
+       Our team is a very select team, and quite difficult to get on. To find a young team who stays off their cell phones while at work, who works extremely hard and efficiently, 
+       who work to make every single plate Instagrammable, and who are super friendly with customers is almost impossible...but we found it! To top it off each team MUST believe in giving back to the community and helping others. 
+       We are not perfect, but we hire good humans with old school work ethic, and who simply love to hand over delicious food. 
+    </div>
+  
+  <div>
+    <a href="https://static.wixstatic.com/media/9b7b0c_2487ec9bc3be43e4a310e446c12f40f9~mv2_d_2048_1536_s_2.jpg/v1/fill/w_641,h_477,al_c,q_80,usm_0.66_1.00_0.01/77276680_797709290702294_772773045576767.webp">
+        <img src="https://static.wixstatic.com/media/9b7b0c_2487ec9bc3be43e4a310e446c12f40f9~mv2_d_2048_1536_s_2.jpg/v1/fill/w_641,h_477,al_c,q_80,usm_0.66_1.00_0.01/77276680_797709290702294_772773045576767.webp"/></a>
+  </div>  
+  
+  <div>
+    - 1st Place Winnipeg La Poutine Week 2018<br><br> 
+
+    - 1st Place Winnipeg's Best Fries Competition by Virgin Radio Ace Burpee Morning Show 2019<br><br>
+
+    - 4th Place La Poutine Week 2019<br><br>
+    
+    - Top 5 Le Burger Week 2019<br><br>
+    
+    - 2nd Place La Poutine Week 2020<br><br>
+    
+    - 1st Place August 2020 Heinz Best Burger in Canada Competition<br><br>
+   </div>
+  
+  <div>
+      <a href="https://static.wixstatic.com/media/9b7b0c_4726897751784372bf665e5fb1c082b2~mv2.jpg/v1/fill/w_551,h_551,al_c,q_80,usm_0.66_1.00_0.01/25398167_327175517761119_169694238982971.webp">
+    <img src="https://static.wixstatic.com/media/9b7b0c_4726897751784372bf665e5fb1c082b2~mv2.jpg/v1/fill/w_551,h_551,al_c,q_80,usm_0.66_1.00_0.01/25398167_327175517761119_169694238982971.webp"/></a>
+
+    <a href="https://static.wixstatic.com/media/9b7b0c_100cd99fce644e9daa4ec1ae09ad1977~mv2.jpg/v1/fill/w_552,h_450,al_c,q_80,usm_0.66_1.00_0.01/52351650_555524548259547_256504477515356.webp">
+        <img src="https://static.wixstatic.com/media/9b7b0c_100cd99fce644e9daa4ec1ae09ad1977~mv2.jpg/v1/fill/w_552,h_450,al_c,q_80,usm_0.66_1.00_0.01/52351650_555524548259547_256504477515356.webp"/></a>
+  </div>
+  
+  <div>
+    Give Back Efforts
+
+    - Friendship Award from St. James Royal Canadian Legion #4 for our donations and give back efforts to Veterans
+    
+    - $6,428.20 Donated to our Veterans through the Poppy Fund at Royal Canadian Legion. 
+    
+    - $1972.40 donated to our friends at Military Family Resource Centre (MFRC)
+    
+    - $500.00 in scholarships to St. James Collegiate toward a student who exemplifies giving back to the community
+    
+    - $500.00 in scholarships to Sturgeon Heights Collegiate toward a student who exemplifies giving back to the community
+    
+    - $1500.00 to St. James Rods Football Club 2019 Sponsorship
+    
+    - $500.00 to The Dream Factory to support Zachary and let his dream come true!
+    
+    - $8000.00 in Feminine Hygiene Products to women's shelters and resource centres. In cooperation with Save On Foods, Four Crowns Inn & Event Centre, and Kotex Canada.
+    
+    - $1689.00 to United Way for Le Burger Week 2019
+    
+    - $130.00 to Agape Table with La Poutine Week 2020
+    
+    - $1000.00 to Ryan Onnoson Funeral Fund
+    
+    - $202.00 to Villa Rosa $1 for every burger sold on Mother's Day 
+    
+    - $300.00 to Siloam Mission June 2020 due to St James Burger vs Willy Dogs Competition
+    
+    - $4,218.00 to United Way September 2020 due to le Burger Week, $1 per burger sold!
+    
+    - $1000 Donation to RCMP Ken Friesen Family
+    
+    - $63 donation to Never Alone Cancer Foundation
+    
+    - $60 donation to Never Alone Cancer Foundation
+    
+    - $66 donation to Never Alone Cancer Foundation
+    
+    - $121 donation to Sara Riel Inc. - Mental Health initiative for burger of the month sales January 2021
+    
+    - $660 to Rainbow Resource Centre for Poutine Week & Burger fo the month sales February 2021
+    
+    - $125 to Penny's All Breed Animal Rescue for Burger of the Month sales (122 actually sold - but rounded up)
+    
+    - $125 to Military Family Resource Centre for Burger of the Month sales (119 actually sold - but rounded up)
+    
+    Total Value of efforts to date Since October 2017: $28,159.60
+  </div>  
+  
+</div>
+
     </body>
 </html>
